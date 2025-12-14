@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Download, Mail, Phone, ExternalLink, Code, Zap, Database, Layout, Search } from 'lucide-react';
-
+import capAndBey from './assets/capandbey.png';
+import galenics from './assets/galenics.png';
+import camiral from './assets/camiral.png';
+import oriental from './assets/oriental.png';
+import sawakart from './assets/shopify.png';
+import sonax from './assets/sonax.png';
+import hamza from './assets/Hamza.jpeg';
 export default function Portfolio() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -38,65 +44,70 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      category: 'Full Stack',
-      description: 'Complete e-commerce solution with payment integration, inventory management, and admin dashboard',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop'
+      title: 'Capacities and Beyond',
+      category: 'WordPress',
+      description: 'Professional corporate website for a growth consultancy, focused on leadership development, psychometric assessments, and strategic communication, designed to build trust and clearly communicate impact.',
+      tech: ['Wordpress', 'PHP', 'Elementor'],
+      image: capAndBey,
+      link: 'https://capandbey.com/'
     },
     {
       id: 2,
-      title: 'Corporate WordPress Site',
+      title: 'Galenics Website',
       category: 'WordPress',
-      description: 'SEO-optimized corporate website with custom theme, ACF integration, and performance optimization',
+      description: 'Modern corporate website for a healthcare consultancy, built to showcase strategic partnerships, data-driven solutions, and innovation-focused market access across MEA healthcare markets.',
       tech: ['WordPress', 'PHP', 'SEO', 'WooCommerce'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop'
+      image: galenics,
+      link: 'https://galenics.com/'
     },
     {
       id: 3,
-      title: 'SaaS Dashboard',
+      title: 'Camiral Salon',
       category: 'Full Stack',
-      description: 'Multi-tenant SaaS platform with analytics, user management, and subscription billing',
-      tech: ['React', 'Express', 'PostgreSQL', 'AWS'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop'
+      description: 'Online booking system with admin dashboard for Camira Salon, allowing clients to easily schedule appointments, manage services, and streamline the salon’s daily operations through a clean and user-friendly interface.',
+      tech: ['React', 'Node/Express', 'MySql'],
+      image: camiral,
+      link:'https://camiral.com'
     },
     {
       id: 4,
-      title: 'Blog & Magazine Site',
+      title: 'Oriental Pharamcy',
       category: 'WordPress',
-      description: 'High-traffic magazine site with advanced SEO, caching strategies, and monetization features',
+      description: 'Professional corporate website for Oriental Pharmacy LLC, highlighting pharmaceutical services, regulatory affairs, and patient-oriented healthcare solutions in Oman.',
       tech: ['WordPress', 'Yoast SEO', 'WP Rocket', 'AdSense'],
-      image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=600&fit=crop'
+      image: oriental
     },
     {
       id: 5,
-      title: 'Real Estate Platform',
-      category: 'Full Stack',
-      description: 'Property listing platform with search filters, map integration, and real-time notifications',
-      tech: ['Vue.js', 'Laravel', 'MySQL', 'Google Maps API'],
-      image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop'
+      title: 'Sawakart',
+      category: 'Shopify',
+      description: 'Large-scale e-commerce platform for Sawakart, built to support product management, online ordering, and scalable digital commerce with a focus on performance and reliability.',
+      tech: ['Liquid', 'Python', 'Mongodb', 'Shopify'],
+      image: sawakart,
+      link: 'https://sawakart.com'
     },
     {
       id: 6,
-      title: 'Restaurant WooCommerce',
+      title: 'Sonax AE',
       category: 'WordPress',
-      description: 'Online ordering system with menu management, delivery tracking, and SEO optimization',
-      tech: ['WooCommerce', 'SEO', 'Custom Plugins', 'Payment Gateway'],
-      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop'
+      description: 'Online store for Sonax car care products, designed to promote premium cleaning, polishing, and detailing solutions while driving online sales.',
+      tech: ['WooCommerce', 'SEO', 'Custom Plugins'],
+      image: sonax,
+      link: 'https://sonax.ae'
     }
   ];
 
   const skills = {
     fullstack: [
-      { name: 'React / Vue.js', level: 95 },
+      { name: 'React / Typescript', level: 95 },
       { name: 'Node.js / Express', level: 90 },
-      { name: 'PHP / Laravel', level: 85 },
-      { name: 'MongoDB / PostgreSQL', level: 88 },
-      { name: 'RESTful APIs', level: 92 },
-      { name: 'Git / DevOps', level: 87 }
+      { name: 'Next.js', level: 85 },
+      { name: 'MongoDB / PostgreSQL / Firebase / Mysql', level: 88 },
+      { name: 'RESTful APIs', level: 96 },
+      { name: 'Git / Docker', level: 78 }
     ],
     wordpress: [
-      { name: 'Custom Theme Development', level: 95 },
+      { name: 'Custom Theme Development', level: 80 },
       { name: 'Plugin Development', level: 90 },
       { name: 'WooCommerce', level: 92 },
       { name: 'SEO Optimization', level: 94 },
@@ -182,10 +193,14 @@ export default function Portfolio() {
                 <Mail size={20} />
                 Get In Touch
               </a>
-              <button className="btn btn-secondary">
-                <Download size={20} />
-                Download CV
-              </button>
+              <a
+                href="/Hamza-Noutfaji-Software-Engineer.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+              >
+                View My Resume
+              </a>
             </div>
             <div className="hero-contact">
               <div className="contact-item">
@@ -194,7 +209,7 @@ export default function Portfolio() {
               </div>
               <div className="contact-item">
                 <Phone size={18} className="contact-icon" />
-                <span>+961 81 05 771</span>
+                <span>+961 81 056 771</span>
               </div>
             </div>
           </div>
@@ -217,14 +232,14 @@ export default function Portfolio() {
             <div className="about-image-container">
               <div className="about-image-glow"></div>
               <img 
-                src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?w=600&h=600&fit=crop" 
+                src= {hamza}
                 alt="Profile" 
                 className="about-image"
               />
             </div>
             <div className="about-text">
               <p className="about-paragraph">
-                I'm a passionate software engineer specializing in full-stack development and WordPress solutions. With expertise in building scalable web applications and creating high-performance, SEO-optimized WordPress sites, I help businesses establish a powerful online presence.
+                I'm a passionate software engineer specializing in full-stack development and WordPress solutions. With expertise in building scalable full-stack web applications and creating high-performance, SEO-optimized WordPress sites, I help businesses establish a powerful online presence.
               </p>
               <p className="about-paragraph">
                 My WordPress expertise extends beyond basic development. I specialize in custom theme and plugin development, WooCommerce customization, advanced SEO implementation, and performance optimization to ensure your site ranks well and loads lightning-fast.
@@ -232,12 +247,12 @@ export default function Portfolio() {
               <div className="stats-grid">
                 <div className="stat-card">
                   <Code className="stat-icon" size={32} />
-                  <div className="stat-number">50+</div>
+                  <div className="stat-number">10+</div>
                   <div className="stat-label">Projects Completed</div>
                 </div>
                 <div className="stat-card">
                   <WordPressIcon />
-                  <div className="stat-number">5+</div>
+                  <div className="stat-number">2+</div>
                   <div className="stat-label">Years Experience</div>
                 </div>
               </div>
@@ -371,10 +386,16 @@ export default function Portfolio() {
                       </span>
                     ))}
                   </div>
-                  <button className="project-link">
-                    <span>View Details</span>
-                    <ExternalLink size={16} />
-                  </button>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                  <span>View Project</span>
+                  <ExternalLink size={16} />
+                </a>
+
                 </div>
               </div>
             ))}
@@ -399,7 +420,7 @@ export default function Portfolio() {
               </div>
               <div className="contact-card-content">
                 <div className="contact-card-label">Email</div>
-                <div className="contact-card-value">hamza.noutfaji@gmail.com</div>
+                <a href='mailto:hamza.noutfaji@gmail.com' className="contact-card-value">hamza.noutfaji@gmail.com</a>
               </div>
             </a>
 
@@ -419,18 +440,24 @@ export default function Portfolio() {
             <p className="contact-cta-text">
               Full-stack development • WordPress solutions • SEO optimization • Performance tuning • Custom integrations
             </p>
-            <button className="btn btn-primary btn-large">
-              Download My Resume
-            </button>
+            <a
+              href="/Hamza-Noutfaji-Software-Engineer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary btn-large"
+            >
+              View My Resume
+            </a>
           </div>
         </div>
       </section>
+      
 
       {/* Footer */}
       <footer className="footer">
         <div className="container footer-content">
           <p className="footer-text">
-            © 2024 Hamza Noutfaji. Built with React & CSS.
+            © 2025 Hamza Noutfaji. Built with React & CSS.
           </p>
           <p className="footer-tagline">
             Crafting exceptional digital experiences
@@ -833,9 +860,10 @@ export default function Portfolio() {
           position: relative;
           border-radius: 1rem;
           width: 100%;
-          height: 384px;
+          height: 400px;
           object-fit: cover;
           border: 2px solid rgba(34, 197, 94, 0.3);
+          object-position: center 29%;
         }
 
         .about-paragraph {
