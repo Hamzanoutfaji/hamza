@@ -67,7 +67,7 @@ export default function Portfolio() {
       description: 'Online booking system with admin dashboard for Camira Salon, allowing clients to easily schedule appointments, manage services, and streamline the salon’s daily operations through a clean and user-friendly interface.',
       tech: ['React', 'Node/Express', 'MySql'],
       image: camiral,
-      link:'https://camiral.com'
+      link:'https://camiralsalon.com'
     },
     {
       id: 4,
@@ -75,7 +75,8 @@ export default function Portfolio() {
       category: 'WordPress',
       description: 'Professional corporate website for Oriental Pharmacy LLC, highlighting pharmaceutical services, regulatory affairs, and patient-oriented healthcare solutions in Oman.',
       tech: ['WordPress', 'Yoast SEO', 'WP Rocket', 'AdSense'],
-      image: oriental
+      image: oriental,
+      link: 'https://orientalpharmacyllc.com'
     },
     {
       id: 5,
