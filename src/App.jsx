@@ -425,13 +425,13 @@ export default function Portfolio() {
               </div>
             </a>
 
-            <a href="tel:+96181057710" className="contact-card">
+            <a href="tel:+961810567710" className="contact-card">
               <div className="contact-card-icon">
                 <Phone size={24} />
               </div>
               <div className="contact-card-content">
                 <div className="contact-card-label">Phone</div>
-                <div className="contact-card-value">+961 81 05 771</div>
+                <div className="contact-card-value">+961 81 056 771</div>
               </div>
             </a>
           </div>
