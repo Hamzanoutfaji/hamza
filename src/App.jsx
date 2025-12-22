@@ -247,7 +247,7 @@ export default function Portfolio() {
               <div className="stats-grid">
                 <div className="stat-card">
                   <Code className="stat-icon" size={32} />
-                  <div className="stat-number">10+</div>
+                  <div className="stat-number">15+</div>
                   <div className="stat-label">Projects Completed</div>
                 </div>
                 <div className="stat-card">
